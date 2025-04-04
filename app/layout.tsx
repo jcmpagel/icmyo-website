@@ -1,17 +1,17 @@
-import type { Metadata } from 'next'
-import './globals.css'
+// In app/layout.tsx
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'ICMYO - International Coordination Meeting of Youth Organizations',
+  description: 'Official website of the International Coordination Meeting of Youth Organizations',
+  // Add other metadata as needed
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
