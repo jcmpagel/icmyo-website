@@ -25,7 +25,7 @@ const taskForceMembers = [
   {
     name: "Kinga",
     role: "Task Force Member",
-    organization: "World Scouting (WS)",
+    organization: "World Organization of the Scout Movement (WOSM)",
     image: "/Kinga.jpg?height=300&width=300",
     social: {
       instagram: "https://instagram.com/worldscouting",
