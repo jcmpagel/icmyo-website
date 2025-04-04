@@ -1,0 +1,8 @@
+# Specific section redirects
+/members /#members 301
+/task-force /#task-force 301
+/about /#about 301
+/contact /#contact 301
+
+# Catch-all redirect for all other undefined paths
+/* / 301

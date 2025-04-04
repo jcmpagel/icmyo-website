@@ -18,18 +18,18 @@ const taskForceMembers = [
     organization: "International Young Catholic Students (IYCS-JECI)",
     image: "/Molina.jpg?height=300&width=300",
     social: {
-      instagram: "https://instagram.com/iycs_jeci",
-      linkedin: "https://linkedin.com/company/iycs-jeci"
+      instagram: "https://instagram.com/jonathanpagel",
+      linkedin: "https://www.linkedin.com/in/jonathan-pagel/"
     }
   },
   {
-    name: "Kinga",
+    name: "Kinga Szalaba",
     role: "Task Force Member",
     organization: "World Organization of the Scout Movement (WOSM)",
     image: "/Kinga.jpg?height=300&width=300",
     social: {
       instagram: "https://instagram.com/worldscouting",
-      linkedin: "https://linkedin.com/company/world-organization-of-the-scout-movement"
+      linkedin: "https://www.linkedin.com/in/kinga-szalaba-641b37357/"
     }
   },
   {
