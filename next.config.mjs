@@ -27,6 +27,8 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // Add static export for Cloudflare Pages
+  output: 'export',
 }
 
 if (userConfig) {
