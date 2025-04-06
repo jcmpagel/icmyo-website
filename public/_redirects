@@ -1,5 +1,9 @@
 # Specific section redirects
 /members /#members 301
+/members/ /#members 301
 /task-force /#task-force 301
+/task-force/ /#task-force 301
 /about /#about 301
+/about/ /#about 301
 /contact /#contact 301
+/contact/ /#contact 301
