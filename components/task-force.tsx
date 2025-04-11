@@ -6,7 +6,7 @@ const taskForceMembers = [
     name: "Gava",
     role: "Task Force Member",
     organization: "The International Pharmaceutical Students' Federation (IPSF)",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/gava.jpg?height=300&width=300",
     social: {
       instagram: "https://instagram.com/ipsf_official",
       linkedin: "https://linkedin.com/company/ipsf"
