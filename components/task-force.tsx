@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Instagram, Linkedin } from "lucide-react"
+import { Instagram, Linkedin, Globe } from "lucide-react"
 
 const taskForceMembers = [
   {
@@ -19,7 +19,8 @@ const taskForceMembers = [
     image: "/Molina.jpg?height=300&width=300",
     social: {
       instagram: "https://instagram.com/jonathanpagel",
-      linkedin: "https://www.linkedin.com/in/jonathan-pagel/"
+      linkedin: "https://www.linkedin.com/in/jonathan-pagel/",
+      website: "https://jonathanpagel.com/"
     }
   },
   {
@@ -81,12 +82,17 @@ export default function TaskForce() {
                 <p className="text-orange-500 font-medium text-sm mb-1">{member.role}</p>
                 <p className="text-gray-600 text-sm mb-3">{member.organization}</p>
                 <div className="flex space-x-3 mt-2">
-                  <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-600">
+                  <a href={member.social.instagram} target="_blank" rel="noopener noreferrer nofollow" className="text-pink-500 hover:text-pink-600">
                     <Instagram className="h-5 w-5" />
                   </a>
-                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700">
+                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer nofollow" className="text-blue-600 hover:text-blue-700">
                     <Linkedin className="h-5 w-5" />
                   </a>
+                  {member.social.website && (
+                    <a href={member.social.website} target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700">
+                      <Globe className="h-5 w-5" />
+                    </a>
+                  )}
                 </div>
               </CardContent>
             </Card>
