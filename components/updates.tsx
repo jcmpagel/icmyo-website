@@ -4,11 +4,29 @@ import { Button } from "@/components/ui/button"
 
 const updates = [
   {
+    title: "UN Youth Strategy - Youth2030: Global Briefing for Youth Networks",
+    date: "June 17, 2025",
+    excerpt:
+      "Join the UN Youth Office and youth partners for an online briefing on Youth2030 Phase 2 (2025-2030). Learn about the strategy, share perspectives, and explore how to engage and amplify youth action.",
+    category: "Current Event",
+    icon: Users,
+    link: "https://tinyurl.com/youth2030-phase2"
+  },
+  {
+    title: "80th Session of the UN General Assembly (UNGA 80)",
+    date: "September 9-23, 2025",
+    excerpt:
+      "ICMYO will participate in the 80th session of the UN General Assembly to present youth perspectives. The high-level General Debate begins on September 23, providing a platform for youth representation at the UN.",
+    category: "Upcoming Event",
+    icon: Globe,
+    link: "https://documents-dds-ny.un.org/doc/UNDOC/GEN/N22/236/53/PDF/N2223653.pdf?OpenElement"
+  },
+  {
     title: "ECOSOC Youth Forum 2025",
     date: "April 15-17, 2025",
     excerpt:
       "ICMYO is co-convening the ECOSOC Youth Forum at UN Headquarters in New York, focusing on sustainable, inclusive, science- and evidence-based solutions for the 2030 Agenda.",
-    category: "Current Event",
+    category: "Past Event",
     icon: Activity,
     link: "https://ecosoc.un.org/en/what-we-do/ecosoc-youth-forum/about-youth-forum/ecosoc-youth-forum-2025"
   },
