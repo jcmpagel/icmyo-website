@@ -1,8 +1,23 @@
+"use client"
+
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Home } from "lucide-react"
+import { Home } from "lucide-react"
 
 export default function NotFound() {
+  const router = useRouter()
+
+  useEffect(() => {
+    // Redirect to homepage after 3 seconds
+    const timer = setTimeout(() => {
+      router.push("/")
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [router])
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       <div className="space-y-6 max-w-lg">
@@ -11,17 +26,14 @@ export default function NotFound() {
         <p className="text-muted-foreground">
           The page you're looking for doesn't exist or has been moved to a different location.
         </p>
+        <p className="text-sm text-muted-foreground">
+          Redirecting to homepage in 3 seconds...
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <Button asChild variant="default">
             <Link href="/">
               <Home className="mr-2 h-4 w-4" />
-              Back to Home
-            </Link>
-          </Button>
-          <Button asChild variant="outline" onClick={() => window.history.back()}>
-            <Link href="#" onClick={(e) => { e.preventDefault(); window.history.back(); }}>
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Go Back
+              Go to Home Now
             </Link>
           </Button>
         </div>
