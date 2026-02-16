@@ -22,6 +22,14 @@ const updates = [
     link: "https://documents-dds-ny.un.org/doc/UNDOC/GEN/N22/236/53/PDF/N2223653.pdf?OpenElement"
   },
   {
+    title: "ECOSOC Youth Forum 2026",
+    date: "April 2026",
+    excerpt:
+      "ICMYO is preparing to engage in the ECOSOC Youth Forum 2026 with youth-led contributions and advocacy around the 2030 Agenda.",
+    category: "Upcoming Event",
+    icon: Activity,
+  },
+  {
     title: "ECOSOC Youth Forum 2025",
     date: "April 15-17, 2025",
     excerpt:
