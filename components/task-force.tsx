@@ -25,16 +25,6 @@ const taskForceMembers = [
     }
   },
   {
-    name: "Kinga Szalaba",
-    role: "Task Force Member",
-    organization: "World Organization of the Scout Movement (WOSM)",
-    image: "/Kinga.jpg?height=300&width=300",
-    social: {
-      instagram: "https://instagram.com/worldscouting",
-      linkedin: "https://www.linkedin.com/in/kinga-szalaba-641b37357/"
-    }
-  },
-  {
     name: "Anna Liakopoulou",
     role: "Task Force Member",
     organization: "International Federation of Medical Students' Associations (IFMSA)",
@@ -42,16 +32,6 @@ const taskForceMembers = [
     social: {
       instagram: "https://instagram.com/ifmsa",
       linkedin: "https://linkedin.com/company/ifmsa"
-    }
-  },
-  {
-    name: "Suman Ghale",
-    role: "Task Force Member",
-    organization: "International Movement of Catholic Students (IMCS-MIEC)",
-    image: "/Suman.jpg?height=300&width=300",
-    social: {
-      instagram: "https://instagram.com/imcs_miec",
-      linkedin: "https://linkedin.com/company/imcs-miec"
     }
   },
 ]
@@ -68,7 +48,7 @@ export default function TaskForce() {
           network, and organizing the annual meeting.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {taskForceMembers.map((member, index) => (
             <Card key={index} className="overflow-hidden h-full">
               <div className="aspect-square overflow-hidden">
