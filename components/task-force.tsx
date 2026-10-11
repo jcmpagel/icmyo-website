@@ -3,13 +3,14 @@ import { Instagram, Linkedin, Globe } from "lucide-react"
 
 const taskForceMembers = [
   {
-    name: "Gava",
+    name: "Rafie Hani Krachni",
     role: "Task Force Member",
     organization: "The International Pharmaceutical Students' Federation (IPSF)",
-    image: "/gava.jpg?height=300&width=300",
+    image: "/rafie-hani-krachni.jpg",
+    imagePosition: "center top",
     social: {
-      instagram: "https://instagram.com/ipsf_official",
-      linkedin: "https://linkedin.com/company/ipsf"
+      instagram: "https://www.instagram.com/rafie_kra/",
+      linkedin: "https://www.linkedin.com/in/rafie-hani-krachni-pharmd-b9522a221/"
     }
   },
   {
@@ -34,10 +35,10 @@ const taskForceMembers = [
     }
   },
   {
-    name: "Lucia",
+    name: "Anna Liakopoulou",
     role: "Task Force Member",
     organization: "International Federation of Medical Students' Associations (IFMSA)",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/anna-liakopoulou.jpeg",
     social: {
       instagram: "https://instagram.com/ifmsa",
       linkedin: "https://linkedin.com/company/ifmsa"
@@ -74,6 +75,7 @@ export default function TaskForce() {
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
+                  style={{ objectPosition: member.imagePosition }}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
